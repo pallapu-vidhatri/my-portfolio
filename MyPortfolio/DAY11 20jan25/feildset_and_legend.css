@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* Main container */
+.container {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #c7d2fe;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+/* Legends */
+legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+/* Input focus */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.5);
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+  background: #1e40af;
+}
