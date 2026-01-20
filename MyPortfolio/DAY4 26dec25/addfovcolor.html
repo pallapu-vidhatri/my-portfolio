@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form> 
+    <label>
+        First Name:
+        <input type="text" name="firstname">
+        <br>
+        Last Name:
+        <input type="text" name="lastname">
+        <br>
+        <hr>
+        Add your favorite color:
+        <input type="color" name="favcolor" onchange="showMeaning(event)">
+        <hr>
+        <p> choose your favorite color and see its meaning!</p>
+        <p id="result"></p>
+    </label>
+ </form>
+    <script>
+        function showMeaning(event) {
+           let color = document.querySelector('input[name="favcolor"]').value;
+            let meaning = '';
+    
+            switch (color) {
+                case '#ff0000':
+                    meaning = 'Red symbolizes passion and energy.';
+                    break;
+                case '#00ff00':
+                    meaning = 'Green represents growth and harmony.';
+                    break;
+                case '#0000ff':
+                    meaning = 'Blue signifies calmness and stability.';
+                    break;
+                case '#ffff00':
+                    meaning = 'Yellow stands for happiness and optimism.';
+                    break;
+                case '#ffa500':
+                    meaning = 'Orange indicates enthusiasm and creativity.';
+                    break;
+                case '#800080':
+                    meaning = 'Purple is associated with luxury and ambition.';
+                    break;
+                case '#000000':
+                    meaning = 'Black denotes elegance and mystery.';
+                    break;
+                case '#ffffff':
+                    meaning = 'White symbolizes purity and simplicity.';
+                    break;
+                case '#808080':
+                    meaning = 'Gray represents neutrality and balance.';
+                    break;  
+                case '#00ffff':
+                    meaning = 'Cyan signifies freshness and energy.';
+                    break;
+                case '#ff00ff':
+                    meaning = 'Magenta stands for creativity and innovation.';
+                    break;  
+                case '#800000':
+                    meaning = 'Maroon indicates confidence and sophistication.';
+                    break;
+                case '#008000':
+                    meaning = 'Dark Green symbolizes stability and endurance.';
+                    break;
+                case '#000080':
+                    meaning = 'Navy Blue represents trust and authority.';
+                    break;
+                case '#808000':
+                    meaning = 'Olive Green denotes peace and wisdom.';
+                    break;    
+                case '#ff1493':
+                    meaning = 'Deep Pink signifies love and compassion.';
+                    break;
+                case '#ffd700':
+                    meaning = 'Gold stands for wealth and success.';
+                    break;
+                case '#a52a2a':
+                    meaning = 'Brown indicates reliability and warmth.';
+                    break;
+                case '#add8e6':
+                    meaning = 'Light Blue symbolizes tranquility and health.';
+                    break;
+                case '#f08080':
+                    meaning = 'Light Coral represents affection and gentleness.';
+                    break;
+                case '#90ee90':
+                    meaning = 'Light Green denotes renewal and energy.';
+                    break;            
+                default:
+                    meaning = 'This color has a unique meaning!';
+            }
+    
+            alert(meaning);
+        }
+    
+        document.getElementById("result").innerText = meaning;
+    </script>
+</body>
+</html>
